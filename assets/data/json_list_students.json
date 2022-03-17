@@ -1,0 +1,121 @@
+[
+    {
+        "nombre": "Soft Pink 1",
+        "padres": "Lucia rana y Pablo",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "Soft Pink"
+    },
+    {
+        "nombre": "Soft Pink 2",
+        "padres": "Lucia rana y Pablo",
+        "telefono": "677543624",
+        "faltas": "4",
+        "clase": "Soft Pink"
+    },
+    {
+        "nombre": "Soft Blue 1",
+        "padres": "Lucia rana y Pablo",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "Soft Blue"
+    },
+    {
+        "nombre": "Soft Blue 2",
+        "padres": "Lucia rana y Pablo",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "Soft Blue"
+    },
+    {
+        "nombre": "Soft Blue 3",
+        "padres": "Lucia rana y Pablo",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "Soft Blue"
+    },
+    {
+        "nombre": "Yellow 1",
+        "padres": "Lucia rana y Pablo",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "Yellow"
+    },
+    {
+        "nombre": "Yellow 2",
+        "padres": "Lucia rana y Pablo",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "Yellow"
+    },
+    {
+        "nombre": "Yellow 3",
+        "padres": "Lucia rana y Pablo",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "Yellow"
+    },
+    {
+        "nombre": "Orange 1",
+        "padres": "Lucia rana y Pablo",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "Orange"
+    },
+    {
+        "nombre": "Orange 2",
+        "padres": "Lucia rana y Pablo",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "Orange"
+    },
+    {
+        "nombre": "Orange 3",
+        "padres": "Lucia rana y Pablo",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "Orange"
+    },
+    {
+        "nombre": "Orange 4",
+        "padres": "Lucia rana y Pablo",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "Orange"
+    },
+    {
+        "nombre": "Orange 5",
+        "padres": "Lucia rana y Pablo",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "Orange"
+    },
+    {
+        "nombre": "Purple 1",
+        "padres": "Lucia rana y Pablo",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "Purple"
+    },
+    {
+        "nombre": "Purple 2",
+        "padres": "Lucia rana y Pablo",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "Purple"
+    },
+    {
+        "nombre": "Purple 3",
+        "padres": "Lucia rana y Pablo",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "Purple"
+    },
+    {
+        "nombre": "Purple 4",
+        "padres": "Lucia rana y Pablo",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "Purple"
+    }
+]

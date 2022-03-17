@@ -1,27 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:lista_clase_colegio/classes/pages/class_page.dart';
-import 'package:lista_clase_colegio/home/widgets/image_box.dart';
+import 'package:lista_clase_colegio/shared/widgets/image_box.dart';
 import 'package:lista_clase_colegio/shared/utils/global_variables/icons.dart';
 import 'package:lista_clase_colegio/shared/utils/global_variables/style.dart';
 import 'package:lista_clase_colegio/shared/utils/global_variables/text.dart';
-import 'package:lista_clase_colegio/shared/utils/global_variables/theme.dart';
 import 'package:lista_clase_colegio/shared/utils/tools/routing.dart';
 import 'package:lista_clase_colegio/shared/widgets/style/box.dart';
 import 'package:lista_clase_colegio/shared/widgets/style/text.dart';
 
-class ClassBox extends StatefulWidget {
-  Color color;
-  String text;
-  String? img;
-  String? classCategory;
+import '../../shared/domains/class_students.dart';
+import '../../shared/widgets/class_category_box.dart';
 
-  ClassBox(
-      {Key? key,
-      required this.color,
-      required this.text,
-      this.img,
-      this.classCategory})
-      : super(key: key);
+class ClassBox extends StatefulWidget {
+  ClassStudents classStudents;
+
+  ClassBox({Key? key, required this.classStudents}) : super(key: key);
 
   @override
   State<ClassBox> createState() => _ClassBoxState();
@@ -36,47 +29,35 @@ class _ClassBoxState extends State<ClassBox> {
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: ELEMENTMARGIN),
         width: MediaQuery.of(context).size.width * 0.4,
-        decoration: boxDecoration(radius: BOXRADIUS, color: widget.color),
+        decoration: boxDecoration(
+            radius: BOXRADIUS * 4, color: widget.classStudents.color),
         child: MaterialButton(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ImageBox(img: widget.img),
+                ImageBox(img: widget.classStudents.img, size: 0.12),
                 textStyle(
-                    text: 'CLASS',
-                    fontColor: TEXTCOLOR,
-                    fontSize: PARAGRAPHTEXT,
-                    align: 'center'),
-                textStyle(
-                    text: widget.text,
-                    fontColor: TEXTCOLOR,
+                    text: widget.classStudents.className,
+                    //fontColor: TEXTCOLOR,
                     fontSize: HEADERSIZE,
+                    fontColor: Colors.black87,
+                    fontFamily: 'PatrickHand',
                     weight: FontWeight.bold,
                     align: 'center'),
+                textStyle(
+                    text: 'CLASS',
+                    //fontColor: TEXTCOLOR,
+                    fontColor: Colors.black87,
+                    fontSize: PARAGRAPHTEXT,
+                    align: 'center'),
                 const SizedBox(height: ELEMENTMARGIN),
-                Container(
-                  decoration: boxDecoration(),
-                  child: widget.classCategory != null
-                      ? Center(
-                          child: textStyle(
-                              text: widget.classCategory,
-                              fontSize: PARAGRAPHTEXT,
-                              weight: FontWeight.bold))
-                      : ERROR,
-                )
-                /*const Divider(thickness: 1.0, color: Colors.white),
-                widget.classCategory != null
-                    ? Center(
-                        child: textStyle(
-                            text: widget.classCategory,
-                            fontSize: PARAGRAPHTEXT,
-                            fontColor: BASECOLOR))
-                    : ERROR,
-                const Divider(thickness: 1.0, color: Colors.white),*/
+                classCategoryBox(widget.classStudents.classCategory)
               ],
             ),
             onPressed: () {
-              goToPage(page: const ClassPage(), context: context);
+              goToPage(
+                  page: ClassPage(classStudents: widget.classStudents),
+                  context: context);
             }),
       ),
     );

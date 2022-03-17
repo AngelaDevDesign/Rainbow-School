@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lista_clase_colegio/shared/utils/global_variables/text.dart';
 import 'package:lista_clase_colegio/shared/utils/global_variables/theme.dart';
-import 'package:lista_clase_colegio/shared/widgets/text_button.dart';
 import 'package:lista_clase_colegio/shared/widgets/style/text.dart';
+import '../../shared/domains/class_students.dart';
 import '../../shared/utils/global_variables/style.dart';
 import '../widgets/class_box.dart';
 
@@ -16,55 +16,65 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   List<Widget> kindergartnerClasses = [
     ClassBox(
-        color: SOFT_BLUE,
-        text: 'SOFT BLUE',
-        img: 'conejito.png',
-        classCategory: 'KINDERGARTEN'),
+      classStudents: ClassStudents(
+          className: 'SOFT BLUE',
+          img: 'conejito.png',
+          classCategory: 'KINDERGARTEN',
+          color: SOFT_BLUE)),
     ClassBox(
-        color: SOFT_PINK,
-        text: 'SOFT PINK',
+      classStudents: ClassStudents(
+        className: 'SOFT PINK',
         img: 'oso-de-peluche.png',
-        classCategory: 'KINDERGARTEN')
+        classCategory: 'KINDERGARTEN',
+        color: SOFT_PINK))
   ];
-  List<Widget> primaryFirstClasses = [
+  List<Widget>? primaryFirstClasses = [
     ClassBox(
-        color: RED, text: 'RED', img: 'fresa.png', classCategory: 'PRIMARY'),
+      classStudents: ClassStudents(
+          className: 'RED', img: 'fresa.png', classCategory: 'PRIMARY', color: RED),
+    ),
     ClassBox(
-        color: ORANGE,
-        text: 'ORANGE',
-        img: 'rodaja-de-naranja.png',
-        classCategory: 'PRIMARY')
+        classStudents: ClassStudents(
+            className: 'ORANGE',
+            img: 'rodaja-de-naranja.png',
+            classCategory: 'PRIMARY',
+            color: ORANGE))
   ];
   List<Widget> primarySecondClasses = [
     ClassBox(
-        color: YELLOW,
-        text: 'YELLOW',
+      classStudents: ClassStudents(
+        className: 'YELLOW',
         img: 'lemon.png',
-        classCategory: 'PRIMARY'),
+        classCategory: 'PRIMARY',
+        color: YELLOW)),
     ClassBox(
-        color: GREEN,
-        text: 'GREEN',
+      classStudents: ClassStudents(
+        className: 'GREEN',
         img: 'aguacate.png',
-        classCategory: 'PRIMARY')
+        classCategory: 'PRIMARY',
+        color: GREEN))
   ];
   List<Widget> primaryThirdClasses = [
     ClassBox(
-        color: PURPLE,
-        text: 'PURPLE',
+      classStudents: ClassStudents(
+        className: 'PURPLE',
         img: 'uva.png',
-        classCategory: 'PRIMARY'),
+        classCategory: 'PRIMARY',
+        color: PURPLE)),
     ClassBox(
-        color: DARK_GREEN,
-        text: 'DARK GREEN',
+      classStudents: ClassStudents(
+        className: 'DARK GREEN',
         img: 'ensalada.png',
-        classCategory: 'SECONDARY'),
+        classCategory: 'SECONDARY',
+        color: DARK_GREEN)),
   ];
   List<Widget> secondaryClasses = [
     ClassBox(
-        color: DARK_PURPLE,
-        text: 'DARK PURPLE',
+      classStudents: ClassStudents(
+        className: 'DARK PURPLE',
         img: 'berenjenas.png',
-        classCategory: 'SECONDARY')
+        classCategory: 'SECONDARY',
+        color: DARK_PURPLE))
   ];
 
   Row classesRow({List<Widget>? rowClasses}) {
@@ -73,20 +83,21 @@ class _HomePageState extends State<HomePage> {
       children: rowClasses!,
     );
   }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.black87,
           body: Container(
               padding: const EdgeInsets.symmetric(
                   vertical: PAGEMARGIN * 2, horizontal: PAGEMARGIN),
-              color: Colors.black87,
               child: Column(
                 children: [
                   textStyle(
                       text: TITLEHOME,
                       fontSize: TITLESIZE * 1.5,
-                      fontFamily: 'PatrickHand',
+                      fontFamily: TITLECLASSFONT,
                       fontColor: TEXTCOLOR,
                       weight: FontWeight.bold),
                   const SizedBox(height: ELEMENTMARGIN),
@@ -101,8 +112,7 @@ class _HomePageState extends State<HomePage> {
                     ]),
                   ),
                 ],
-              )
-          )),
+              ))),
     );
   }
 }
