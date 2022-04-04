@@ -1,121 +1,423 @@
 [
     {
-        "nombre": "Soft Pink 1",
-        "padres": "Lucia rana y Pablo",
+        "nombre": "Deborah Oconnor",
+        "padres": "Lana Oconnor and Michael Rodriguez",
         "telefono": "677543624",
-        "faltas": "3",
-        "clase": "Soft Pink"
+        "faltas": "1",
+        "clase": "SOFT PINK"
     },
     {
-        "nombre": "Soft Pink 2",
-        "padres": "Lucia rana y Pablo",
+        "nombre": "Deborah Oconnor",
+        "padres": "Lana Oconnor and Michael Rodriguez",
         "telefono": "677543624",
-        "faltas": "4",
-        "clase": "Soft Pink"
+        "faltas": "1",
+        "clase": "PURPLE"
     },
     {
-        "nombre": "Soft Blue 1",
-        "padres": "Lucia rana y Pablo",
+        "nombre": "Carla Montgomery",
+        "padres": "Peter Montgomery and Lisa Ward",
         "telefono": "677543624",
-        "faltas": "3",
-        "clase": "Soft Blue"
+        "faltas": "0",
+        "clase": "PURPLE"
     },
     {
-        "nombre": "Soft Blue 2",
-        "padres": "Lucia rana y Pablo",
+        "nombre": "Carla Montgomery",
+        "padres": "Peter Montgomery and Lisa Ward",
         "telefono": "677543624",
-        "faltas": "3",
-        "clase": "Soft Blue"
+        "faltas": "0",
+        "clase": "SOFT PINK"
     },
     {
-        "nombre": "Soft Blue 3",
-        "padres": "Lucia rana y Pablo",
+        "nombre": "Deborah Oconnor",
+        "padres": "Lana Oconnor and Michael Rodriguez",
         "telefono": "677543624",
-        "faltas": "3",
-        "clase": "Soft Blue"
+        "faltas": "1",
+        "clase": "RED"
     },
     {
-        "nombre": "Yellow 1",
-        "padres": "Lucia rana y Pablo",
+        "nombre": "Carla Montgomery",
+        "padres": "Peter Montgomery and Lisa Ward",
         "telefono": "677543624",
-        "faltas": "3",
-        "clase": "Yellow"
+        "faltas": "0",
+        "clase": "RED"
     },
     {
-        "nombre": "Yellow 2",
-        "padres": "Lucia rana y Pablo",
+        "nombre": "Kim Moore",
+        "padres": "George Duffy and Leony Moore",
         "telefono": "677543624",
-        "faltas": "3",
-        "clase": "Yellow"
+        "faltas": "0",
+        "clase": "SOFT BLUE"
     },
     {
-        "nombre": "Yellow 3",
-        "padres": "Lucia rana y Pablo",
+        "nombre": "Lisa Turner",
+        "padres": "Shane Turner and Maria carey",
         "telefono": "677543624",
         "faltas": "3",
-        "clase": "Yellow"
+        "clase": "SOFT BLUE"
     },
     {
-        "nombre": "Orange 1",
-        "padres": "Lucia rana y Pablo",
+        "nombre": "Johnny Ward",
+        "padres": "Lucia Hodges and Petter Ward",
         "telefono": "677543624",
-        "faltas": "3",
-        "clase": "Orange"
+        "faltas": "1",
+        "clase": "SOFT BLUE"
     },
     {
-        "nombre": "Orange 2",
-        "padres": "Lucia rana y Pablo",
+        "nombre": "Lisa Turner",
+        "padres": "Shane Turner and Maria carey",
         "telefono": "677543624",
         "faltas": "3",
-        "clase": "Orange"
+        "clase": "PURPLE"
     },
     {
-        "nombre": "Orange 3",
-        "padres": "Lucia rana y Pablo",
+        "nombre": "Johnny Ward",
+        "padres": "Lucia Hodges and Petter Ward",
         "telefono": "677543624",
-        "faltas": "3",
-        "clase": "Orange"
+        "faltas": "1",
+        "clase": "PURPLE"
     },
     {
-        "nombre": "Orange 4",
-        "padres": "Lucia rana y Pablo",
+        "nombre": "Shane Rivas",
+        "padres": "Cassidy Bowman and David Rivas",
         "telefono": "677543624",
-        "faltas": "3",
-        "clase": "Orange"
+        "faltas": "0",
+        "clase": "YELLOW"
     },
     {
-        "nombre": "Orange 5",
-        "padres": "Lucia rana y Pablo",
+        "nombre": "Johnny Ward",
+        "padres": "Lucia Hodges and Petter Ward",
         "telefono": "677543624",
-        "faltas": "3",
-        "clase": "Orange"
+        "faltas": "1",
+        "clase": "RED"
     },
     {
-        "nombre": "Purple 1",
-        "padres": "Lucia rana y Pablo",
+        "nombre": "Shane Rivas",
+        "padres": "Cassidy Bowman and David Rivas",
         "telefono": "677543624",
-        "faltas": "3",
-        "clase": "Purple"
+        "faltas": "0",
+        "clase": "RED"
     },
     {
-        "nombre": "Purple 2",
-        "padres": "Lucia rana y Pablo",
+        "nombre": "Jeremiah Lopez",
+        "padres": "Pablo Lopez and Ahsley Bentin",
         "telefono": "677543624",
         "faltas": "3",
-        "clase": "Purple"
+        "clase": "YELLOW"
     },
     {
-        "nombre": "Purple 3",
-        "padres": "Lucia rana y Pablo",
+        "nombre": "Andrea Hanson",
+        "padres": "Vincent Hanson and Laila Garza",
         "telefono": "677543624",
-        "faltas": "3",
-        "clase": "Purple"
+        "faltas": "0",
+        "clase": "RED"
     },
     {
-        "nombre": "Purple 4",
-        "padres": "Lucia rana y Pablo",
+        "nombre": "Amanda Alexander",
+        "padres": "Nathaniel Alexander and Amanda Petty",
+        "telefono": "677543624",
+        "faltas": "1",
+        "clase": "PURPLE"
+    },
+    {
+        "nombre": "Sharon Hanson",
+        "padres": "Vincent Hanson and Laila Garza",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "PURPLE"
+    },
+    {
+        "nombre": "Amanda Alexander",
+        "padres": "Nathaniel Alexander and Amanda Petty",
+        "telefono": "677543624",
+        "faltas": "1",
+        "clase": "RED"
+    },
+    {
+        "nombre": "Sharon Hanson",
+        "padres": "Vincent Hanson and Laila Garza",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "YELLOW"
+    },
+    {
+        "nombre": "Anthony Alexander",
+        "padres": "Nathaniel Alexander and Amanda Petty",
+        "telefono": "677543624",
+        "faltas": "1",
+        "clase": "YELLOW"
+    },
+    {
+        "nombre": "Sarah Powers",
+        "padres": "Lukas Powers and Sheila Great",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "YELLOW"
+    },
+    {
+        "nombre": "Tiffany Flores",
+        "padres": "Justin Flores and June Hood",
+        "telefono": "677543624",
+        "faltas": "1",
+        "clase": "YELLOW"
+    },
+    {
+        "nombre": "Kimberly Gray",
+        "padres": "Kimberly Mckay and Jorge Gray",
+        "telefono": "677543624",
+        "faltas": "1",
+        "clase": "YELLOW"
+    },
+    {
+        "nombre": "Alex Sampson",
+        "padres": "Alex Sampson and Justin Hale",
+        "telefono": "677543624",
+        "faltas": "1",
+        "clase": "YELLOW"
+    },
+    {
+        "nombre": "Eric Thompson",
+        "padres": "Thomas Thompson and Lucilda James",
+        "telefono": "677543624",
+        "faltas": "1",
+        "clase": "YELLOW"
+    },
+    {
+        "nombre": "Olivia Wood",
+        "padres": "Lukas Wood and Amanda Sheilf",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "YELLOW"
+    },
+    {
+        "nombre": "Jessica Ball",
+        "padres": "Jonas Ball and Sheila Hayden",
+        "telefono": "677543624",
+        "faltas": "1",
+        "clase": "YELLOW"
+    },
+    {
+        "nombre": "Donna Jimenez",
+        "padres": "Maria Jimenez and Robert Wales",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "YELLOW"
+    },
+    {
+        "nombre": "Matthew Williams",
+        "padres": "Paul Williams and Angela Hopker",
         "telefono": "677543624",
         "faltas": "3",
-        "clase": "Purple"
+        "clase": "YELLOW"
+    },
+    {
+        "nombre": "Paul Boyd",
+        "padres": "Peter Boyd and Hanna Sheyld",
+        "telefono": "677543624",
+        "faltas": "1",
+        "clase": "YELLOW"
+    },
+    {
+        "nombre": "James Duncan",
+        "padres": "Lucia Duncand and Petter Hollister",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "ORANGE"
+    },
+    {
+        "nombre": "Christine Riley",
+        "padres": "Stephen Riley and Sarah Peterson",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "ORANGE"
+    },
+    {
+        "nombre": "Mark Tran",
+        "padres": "Melissa Tran and James Kirsten",
+        "telefono": "677543624",
+        "faltas": "2",
+        "clase": "ORANGE"
+    },
+    {
+        "nombre": "James Lee",
+        "padres": "Oliver Lee and Amanda Yeins",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "ORANGE"
+    },
+    {
+        "nombre": "Mark Tran",
+        "padres": "Paula tran and Robert Pattinson",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "ORANGE"
+    },
+    {
+        "nombre": "Valerie Evans",
+        "padres": "Lukas Evans and Carrie James",
+        "telefono": "677543624",
+        "faltas": "1",
+        "clase": "PURPLE"
+    },
+    {
+        "nombre": "Edwin Wright",
+        "padres": "Edward Wright and Amanda Lopez",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "PURPLE"
+    },
+    {
+        "nombre": "Edward Porter",
+        "padres": "Edward Porter and Jenny Harrison",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "PURPLE"
+    },
+    {
+        "nombre": "Paula Brooks",
+        "padres": "Taylor Brooks and Oster Great",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "PURPLE"
+    },
+    {
+        "nombre": "Mark Tran",
+        "padres": "Melissa Tran and James Kirsten",
+        "telefono": "677543624",
+        "faltas": "2",
+        "clase": "DARK GREEN"
+    },
+    {
+        "nombre": "James Lee",
+        "padres": "Oliver Lee and Amanda Yeins",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "DARK GREEN"
+    },
+    {
+        "nombre": "Mark Tran",
+        "padres": "Paula tran and Robert Pattinson",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "DARK GREEN"
+    },
+    {
+        "nombre": "Valerie Evans",
+        "padres": "Lukas Evans and Carrie James",
+        "telefono": "677543624",
+        "faltas": "1",
+        "clase": "DARK GREEN"
+    },
+    {
+        "nombre": "Edwin Wright",
+        "padres": "Edward Wright and Amanda Lopez",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "DARK GREEN"
+    },
+    {
+        "nombre": "Edward Porter",
+        "padres": "Edward Porter and Jenny Harrison",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "DARK GREEN"
+    },
+    {
+        "nombre": "Paula Brooks",
+        "padres": "Taylor Brooks and Oster Great",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "DARK GREEN"
+    },
+    {
+        "nombre": "Edwin Wright",
+        "padres": "Edward Wright and Amanda Lopez",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "DARK GREEN"
+    },
+    {
+        "nombre": "Edward Porter",
+        "padres": "Edward Porter and Jenny Harrison",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "DARK GREEN"
+    },
+    {
+        "nombre": "Paula Brooks",
+        "padres": "Taylor Brooks and Oster Great",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "DARK GREEN"
+    },
+    {
+        "nombre": "Edwin Wright",
+        "padres": "Edward Wright and Amanda Lopez",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "SOFT BLUE"
+    },
+    {
+        "nombre": "Edward Porter",
+        "padres": "Edward Porter and Jenny Harrison",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "SOFT BLUE"
+    },
+    {
+        "nombre": "Paula Brooks",
+        "padres": "Taylor Brooks and Oster Great",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "SOFT BLUE"
+    },
+
+    {
+        "nombre": "Lola Brooks",
+        "padres": "Taylor Brooks and Oster Great",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "SOFT PINK"
+    },
+    {
+        "nombre": "Valerie Evans",
+        "padres": "Lukas Evans and Carrie James",
+        "telefono": "677543624",
+        "faltas": "1",
+        "clase": "RED"
+    },
+    {
+        "nombre": "Edwin Wright",
+        "padres": "Edward Wright and Amanda Lopez",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "RED"
+    },
+    {
+        "nombre": "Edward Porter",
+        "padres": "Edward Porter and Jenny Harrison",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "RED"
+    },
+    {
+        "nombre": "Paula Brooks",
+        "padres": "Taylor Brooks and Oster Great",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "RED"
+    },
+    {
+        "nombre": "Edwin Wright",
+        "padres": "Edward Wright and Amanda Lopez",
+        "telefono": "677543624",
+        "faltas": "0",
+        "clase": "RED"
+    },
+    {
+        "nombre": "Edward Porter",
+        "padres": "Edward Porter and Jenny Harrison",
+        "telefono": "677543624",
+        "faltas": "3",
+        "clase": "RED"
     }
 ]

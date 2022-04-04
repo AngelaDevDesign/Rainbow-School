@@ -25,7 +25,6 @@ class _ClassPageState extends State<ClassPage> {
 
   List<Student>? studentsList;
 
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -33,7 +32,7 @@ class _ClassPageState extends State<ClassPage> {
         backgroundColor: widget.classStudents!.color,
         body: Container(
           padding: const EdgeInsets.symmetric(
-              vertical: PAGEMARGIN, horizontal: PAGEMARGIN),
+              vertical: PAGEMARGIN * 2, horizontal: PAGEMARGIN),
           child: Column(
             children: [
               ImageBox(img: widget.classStudents!.img, size: 0.15),
@@ -47,7 +46,7 @@ class _ClassPageState extends State<ClassPage> {
                 padding: const EdgeInsets.symmetric(horizontal: PAGEMARGIN * 3),
                 child: classCategoryBox(widget.classStudents!.classCategory),
               ),
-              ListViewStudents(className: widget.classStudents!.className),
+              ListViewStudents(classStudent: widget.classStudents),
               iconButton(icon: BACK, color: Colors.white, page: const HomePage(), context: context)
             ],
           ),

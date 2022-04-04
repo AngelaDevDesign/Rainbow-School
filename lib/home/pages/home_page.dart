@@ -5,6 +5,7 @@ import 'package:lista_clase_colegio/shared/widgets/style/text.dart';
 import '../../shared/domains/class_students.dart';
 import '../../shared/utils/global_variables/style.dart';
 import '../widgets/class_box.dart';
+import '../widgets/teacher_username.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -91,17 +92,16 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.black87,
           body: Container(
               padding: const EdgeInsets.symmetric(
-                  vertical: PAGEMARGIN * 2, horizontal: PAGEMARGIN),
+                  vertical: PAGEMARGIN * 2, horizontal: PAGEMARGIN * 0.6),
               child: Column(
                 children: [
                   textStyle(
                       text: TITLEHOME,
                       fontSize: TITLESIZE * 1.5,
                       fontFamily: TITLECLASSFONT,
-                      fontColor: TEXTCOLOR,
+                      fontColor: TITLECOLOR,
                       weight: FontWeight.bold),
-                  const SizedBox(height: ELEMENTMARGIN),
-                  const SizedBox(height: ELEMENTMARGIN),
+                  teacherUsername('Miss Rain Teacher'),
                   Expanded(
                     child: ListView(shrinkWrap: true, children: [
                       classesRow(rowClasses: kindergartnerClasses),
