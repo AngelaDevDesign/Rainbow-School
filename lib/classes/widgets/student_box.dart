@@ -9,17 +9,18 @@ import '../../students/pages/student_page.dart';
 import '../domain/student.dart';
 
 class StudentBox extends StatelessWidget {
-
   Student student;
   ClassStudents classStudent;
 
-  StudentBox({Key? key, required this.student, required this.classStudent}) : super(key: key);
+  StudentBox({Key? key, required this.student, required this.classStudent})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       child: Container(
-        margin: const EdgeInsets.symmetric(vertical: 1.0, horizontal: PAGEMARGIN * 3),
+          margin: const EdgeInsets.symmetric(
+              vertical: 1.0, horizontal: PAGEMARGIN * 3),
           padding: const EdgeInsets.all(ELEMENTMARGIN),
           decoration: boxDecoration(color: Colors.white),
           child: Row(
@@ -29,7 +30,9 @@ class StudentBox extends StatelessWidget {
               textStyle(text: student.nombre, weight: FontWeight.bold)
             ],
           )),
-      onTap: () => goToPage(page: StudentPage(student: student, classStudent: classStudent), context: context),
+      onTap: () => goToPage(
+          page: StudentPage(student: student, classStudent: classStudent),
+          context: context),
     );
   }
 }

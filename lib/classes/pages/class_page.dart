@@ -13,9 +13,9 @@ import '../domain/student.dart';
 import '../widgets/list_view.dart';
 
 class ClassPage extends StatefulWidget {
-  ClassStudents classStudents;
+  ClassStudents classStudent;
 
-  ClassPage({Key? key, required this.classStudents}) : super(key: key);
+  ClassPage({Key? key, required this.classStudent}) : super(key: key);
 
   @override
   State<ClassPage> createState() => _ClassPageState();
@@ -29,25 +29,34 @@ class _ClassPageState extends State<ClassPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: widget.classStudents!.color,
+        backgroundColor: widget.classStudent!.color,
         body: Container(
-          padding: const EdgeInsets.symmetric(
-              vertical: PAGEMARGIN * 2, horizontal: PAGEMARGIN),
+          margin: const EdgeInsets.symmetric(
+              vertical: PAGEMARGIN),
           child: Column(
             children: [
-              ImageBox(img: widget.classStudents!.img, size: 0.15),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                    child: iconButton(icon: BACK, color: Colors.white, page: const HomePage(), context: context),
+                  ),
+                ],
+              ),
+              ImageBox(img: widget.classStudent!.img, size: 0.15),
               textStyle(
-                  text: '${widget.classStudents!.className} CLASS',
+                  text: '${widget.classStudent!.className} CLASS',
                   fontSize: BIGHEADERSIZE,
                   fontColor: TEXTCOLOR,
                   fontFamily: TITLECLASSFONT,
                   weight: FontWeight.bold),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: PAGEMARGIN * 3),
-                child: classCategoryBox(widget.classStudents!.classCategory),
+                child: classCategoryBox(widget.classStudent!.classCategory),
               ),
-              ListViewStudents(classStudent: widget.classStudents),
-              iconButton(icon: BACK, color: Colors.white, page: const HomePage(), context: context)
+              ListViewStudents(classStudent: widget.classStudent),
+              const SizedBox(height: 40.0)
             ],
           ),
         ),

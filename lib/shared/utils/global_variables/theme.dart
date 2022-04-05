@@ -17,5 +17,6 @@ const Color DARK_PURPLE = Color(0xff4a148c);   // --> arandano
 
 /* Page */
 const Color BASECOLOR = Color(0xfffffbf0); //Color(0xfff9fbe7);
-const Color TITLECOLOR = Color(0xffffffff);
+const Color TITLECOLOR = Color(0xfff461C0A);
 const Color TEXTCOLOR = Colors.black87;
+const Color PAGECOLOR = Color(0xfff6F6F4);

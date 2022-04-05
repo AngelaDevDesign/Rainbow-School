@@ -5,7 +5,6 @@ import 'package:lista_clase_colegio/shared/widgets/style/text.dart';
 import '../../shared/domains/class_students.dart';
 import '../../shared/utils/global_variables/style.dart';
 import '../widgets/class_box.dart';
-import '../widgets/teacher_username.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -89,10 +88,10 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.black87,
+        backgroundColor: PAGECOLOR,
           body: Container(
-              padding: const EdgeInsets.symmetric(
-                  vertical: PAGEMARGIN * 2, horizontal: PAGEMARGIN * 0.6),
+              margin: const EdgeInsets.symmetric(
+                  vertical: PAGEMARGIN),
               child: Column(
                 children: [
                   textStyle(
@@ -101,7 +100,11 @@ class _HomePageState extends State<HomePage> {
                       fontFamily: TITLECLASSFONT,
                       fontColor: TITLECOLOR,
                       weight: FontWeight.bold),
-                  teacherUsername('Miss Rain Teacher'),
+                  textStyle(
+                    text: 'Welcome Miss Rain Teacher',
+                    fontColor: TITLECOLOR,
+                    fontSize: HEADERSIZE,
+                  ),
                   Expanded(
                     child: ListView(shrinkWrap: true, children: [
                       classesRow(rowClasses: kindergartnerClasses),

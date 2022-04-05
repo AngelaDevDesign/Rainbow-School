@@ -24,39 +24,47 @@ class ClassBox extends StatefulWidget {
 class _ClassBoxState extends State<ClassBox> {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(
-          horizontal: ELEMENTMARGIN * 1.5, vertical: ELEMENTMARGIN),
-      child: Container(
-        width: MediaQuery.of(context).size.width * 0.4,
-        padding: const EdgeInsets.symmetric(vertical: ELEMENTMARGIN * 1.5),
-        decoration: boxDecoration(
-            radius: BOXRADIUS * 4, color: widget.classStudents.color),
-        child: MaterialButton(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                ImageBox(img: widget.classStudents.img, size: ICONSIZE),
-                textStyle(
-                    text: widget.classStudents.className,
-                    fontSize: HEADERSIZE,
-                    fontColor: TEXTCOLOR,
-                    fontFamily: 'PatrickHand',
-                    weight: FontWeight.bold),
-                textStyle(
-                    text: 'CLASS',
-                    fontColor: TEXTCOLOR,
-                    fontSize: PARAGRAPHTEXT),
-                const SizedBox(height: ELEMENTMARGIN  * 0.5),
-                classCategoryBox(widget.classStudents.classCategory)
-              ],
-            ),
-            onPressed: () {
-              goToPage(
-                  page: ClassPage(classStudents: widget.classStudents),
-                  context: context);
-            }),
-      ),
+    return Container(
+      width: MediaQuery.of(context).size.width * 0.5,
+      padding: const EdgeInsets.symmetric(vertical: ELEMENTMARGIN * 1.5),
+      decoration: boxDecoration(
+          radius: BOXRADIUS * 4, color: PAGECOLOR),
+      child: MaterialButton(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ImageBox(img: widget.classStudents.img, size: ICONSIZE),
+              Container(
+                padding: const EdgeInsets.symmetric(vertical: ELEMENTMARGIN),
+                decoration: boxDecoration(
+                    radius: BOXRADIUS * 4, color: widget.classStudents.color),
+                child: Column(
+                  children: [
+                    textStyle(
+                        text: widget.classStudents.className,
+                        fontSize: HEADERSIZE,
+                        fontColor: TEXTCOLOR,
+                        fontFamily: 'PatrickHand',
+                        weight: FontWeight.bold),
+                    textStyle(
+                        text: 'CLASS',
+                        fontColor: TEXTCOLOR,
+                        fontSize: PARAGRAPHTEXT),
+                    const SizedBox(height: ELEMENTMARGIN  * 0.5),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                      child: classCategoryBox(widget.classStudents.classCategory),
+                    )
+                  ],
+                ),
+              ),
+            ],
+          ),
+          onPressed: () {
+            goToPage(
+                page: ClassPage(classStudent: widget.classStudents),
+                context: context);
+          }),
     );
   }
 }
