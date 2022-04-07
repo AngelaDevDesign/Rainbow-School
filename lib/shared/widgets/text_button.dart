@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lista_clase_colegio/shared/widgets/style/box.dart';
 import 'package:lista_clase_colegio/shared/widgets/style/text.dart';
+
+import '../utils/style/box_style.dart';
 
 class TextButtonItem extends StatefulWidget {
   String? label;

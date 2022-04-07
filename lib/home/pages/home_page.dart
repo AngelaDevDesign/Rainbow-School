@@ -14,107 +14,89 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<Widget> kindergartnerClasses = [
+  List<Widget> allClasses = [
+    ClassBox(
+        classStudents: ClassStudents(
+            className: 'softblue',
+            img: 'blue_flower.png',
+            classCategory: 'KINDER')),
+    ClassBox(
+        classStudents: ClassStudents(
+            className: 'softpink',
+            img: 'pink_flower.png',
+            classCategory: 'KINDER')),
     ClassBox(
       classStudents: ClassStudents(
-          className: 'SOFT BLUE',
-          img: 'conejito.png',
-          classCategory: 'KINDERGARTEN',
-          color: SOFT_BLUE)),
-    ClassBox(
-      classStudents: ClassStudents(
-        className: 'SOFT PINK',
-        img: 'oso-de-peluche.png',
-        classCategory: 'KINDERGARTEN',
-        color: SOFT_PINK))
-  ];
-  List<Widget>? primaryFirstClasses = [
-    ClassBox(
-      classStudents: ClassStudents(
-          className: 'RED', img: 'fresa.png', classCategory: 'PRIMARY', color: RED),
+          className: 'red',
+          img: 'fresa.png',
+          classCategory: 'PRIMARY'),
     ),
     ClassBox(
         classStudents: ClassStudents(
-            className: 'ORANGE',
+            className: 'orange',
             img: 'rodaja-de-naranja.png',
-            classCategory: 'PRIMARY',
-            color: ORANGE))
+            classCategory: 'PRIMARY')),
+    ClassBox(
+        classStudents: ClassStudents(
+            className: 'yellow',
+            img: 'lemon.png',
+            classCategory: 'PRIMARY')),
+    ClassBox(
+        classStudents: ClassStudents(
+            className: 'softgreen',
+            img: 'aguacate.png',
+            classCategory: 'PRIMARY')),
+    ClassBox(
+        classStudents: ClassStudents(
+            className: 'softpurple',
+            img: 'uva.png',
+            classCategory: 'PRIMARY')),
+    ClassBox(
+        classStudents: ClassStudents(
+            className: 'darkgreen',
+            img: 'ensalada.png',
+            classCategory: 'SECONDARY')),
+    ClassBox(
+        classStudents: ClassStudents(
+            className: 'darkpurple',
+            img: 'berenjenas.png',
+            classCategory: 'SECONDARY'))
   ];
-  List<Widget> primarySecondClasses = [
-    ClassBox(
-      classStudents: ClassStudents(
-        className: 'YELLOW',
-        img: 'lemon.png',
-        classCategory: 'PRIMARY',
-        color: YELLOW)),
-    ClassBox(
-      classStudents: ClassStudents(
-        className: 'GREEN',
-        img: 'aguacate.png',
-        classCategory: 'PRIMARY',
-        color: GREEN))
-  ];
-  List<Widget> primaryThirdClasses = [
-    ClassBox(
-      classStudents: ClassStudents(
-        className: 'PURPLE',
-        img: 'uva.png',
-        classCategory: 'PRIMARY',
-        color: PURPLE)),
-    ClassBox(
-      classStudents: ClassStudents(
-        className: 'DARK GREEN',
-        img: 'ensalada.png',
-        classCategory: 'SECONDARY',
-        color: DARK_GREEN)),
-  ];
-  List<Widget> secondaryClasses = [
-    ClassBox(
-      classStudents: ClassStudents(
-        className: 'DARK PURPLE',
-        img: 'berenjenas.png',
-        classCategory: 'SECONDARY',
-        color: DARK_PURPLE))
-  ];
-
-  Row classesRow({List<Widget>? rowClasses}) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: rowClasses!,
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: PAGECOLOR,
           body: Container(
-              margin: const EdgeInsets.symmetric(
-                  vertical: PAGEMARGIN),
-              child: Column(
-                children: [
-                  textStyle(
-                      text: TITLEHOME,
-                      fontSize: TITLESIZE * 1.5,
-                      fontFamily: TITLECLASSFONT,
-                      fontColor: TITLECOLOR,
-                      weight: FontWeight.bold),
-                  textStyle(
-                    text: 'Welcome Miss Rain Teacher',
-                    fontColor: TITLECOLOR,
-                    fontSize: HEADERSIZE,
-                  ),
-                  Expanded(
-                    child: ListView(shrinkWrap: true, children: [
-                      classesRow(rowClasses: kindergartnerClasses),
-                      classesRow(rowClasses: primaryFirstClasses),
-                      classesRow(rowClasses: primarySecondClasses),
-                      classesRow(rowClasses: primaryThirdClasses),
-                      classesRow(rowClasses: secondaryClasses),
-                    ]),
-                  ),
-                ],
+              /*decoration: const BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage("assets/images/arco_iris_22.png"),
+                    fit: BoxFit.cover),
+              ),*/
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                    vertical: PAGEMARGIN, horizontal: PAGEMARGIN / 2),
+                child: Column(
+                  children: [
+                    SizedBox(
+                      child: Image.asset("assets/images/hogar.png"),
+                      height: 40.0,
+                    ),
+                    textStyle(
+                        text: TITLEHOME,
+                        fontSize: TITLESIZE,
+                        fontFamily: TITLEFONT,
+                        fontColor: TITLECOLOR,
+                        weight: FontWeight.bold),
+                    const SizedBox(height: ELEMENTMARGIN * 3),
+                    Expanded(
+                      child: ListView(
+                          shrinkWrap: true,
+                          children: allClasses,
+                          scrollDirection: Axis.horizontal),
+                    ),
+                  ],
+                ),
               ))),
     );
   }

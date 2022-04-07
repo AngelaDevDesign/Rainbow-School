@@ -29,35 +29,35 @@ class _ClassPageState extends State<ClassPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: widget.classStudent!.color,
         body: Container(
-          margin: const EdgeInsets.symmetric(
-              vertical: PAGEMARGIN),
-          child: Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                    child: iconButton(icon: BACK, color: Colors.white, page: const HomePage(), context: context),
-                  ),
-                ],
-              ),
-              ImageBox(img: widget.classStudent!.img, size: 0.15),
-              textStyle(
-                  text: '${widget.classStudent!.className} CLASS',
-                  fontSize: BIGHEADERSIZE,
-                  fontColor: TEXTCOLOR,
-                  fontFamily: TITLECLASSFONT,
-                  weight: FontWeight.bold),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: PAGEMARGIN * 3),
-                child: classCategoryBox(widget.classStudent!.classCategory),
-              ),
-              ListViewStudents(classStudent: widget.classStudent),
-              const SizedBox(height: 40.0)
-            ],
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage("assets/images/${widget.classStudent.className}_background.png"),
+                fit: BoxFit.cover),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(PAGEMARGIN),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    iconButton(icon: BACK, color: Colors.black87, page: const HomePage(), context: context),
+                  ],
+                ),
+                ImageBox(img: widget.classStudent.img, size: 0.15),
+                textStyle(
+                    text: '${widget.classStudent.className.toUpperCase()} CLASS',
+                    fontSize: BIGHEADERSIZE,
+                    fontColor: TEXTCOLOR,
+                    fontFamily: TITLEFONT,
+                    weight: FontWeight.bold),
+                const SizedBox(height: ELEMENTMARGIN),
+                classCategoryBox(widget.classStudent.classCategory, context),
+                const SizedBox(height: ELEMENTMARGIN),
+                ListViewStudents(classStudent: widget.classStudent)
+              ],
+            ),
           ),
         ),
       ),

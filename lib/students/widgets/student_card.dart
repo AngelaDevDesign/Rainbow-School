@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../classes/domain/student.dart';
 import '../../shared/utils/global_variables/style.dart';
 import '../../shared/utils/global_variables/text.dart';
-import '../../shared/widgets/style/box.dart';
+import '../../shared/utils/style/box_style.dart';
 import '../../shared/widgets/style/text.dart';
 
 class StudentCard extends StatefulWidget {
@@ -19,10 +19,13 @@ class _StudentCardState extends State<StudentCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(
-          vertical: ELEMENTMARGIN * 2, horizontal: ELEMENTMARGIN * 5),
+      margin: const EdgeInsets.only(top: ELEMENTMARGIN),
       padding: const EdgeInsets.all(ELEMENTMARGIN * 2),
-      decoration: boxDecoration(color: Colors.white),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: const BorderRadius.all(Radius.circular(10)),
+        boxShadow: boxShadow(0.3)
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -45,7 +48,10 @@ class _StudentCardState extends State<StudentCard> {
           textStyle(text: widget.student.clase),
           const SizedBox(height: 8.0),
           textStyle(text: 'Absences:', weight: FontWeight.bold),
-          textStyle(text: widget.student.faltas == '0' ? 'none' : widget.student.faltas),
+          textStyle(
+              text: widget.student.faltas == '0'
+                  ? 'none'
+                  : widget.student.faltas),
           const Divider(thickness: 1.5, color: Colors.black87),
         ],
       ),
