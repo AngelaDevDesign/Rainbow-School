@@ -39,12 +39,6 @@ class _ClassPageState extends State<ClassPage> {
             padding: const EdgeInsets.all(PAGEMARGIN),
             child: Column(
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    iconButton(icon: BACK, color: Colors.black87, page: const HomePage(), context: context),
-                  ],
-                ),
                 ImageBox(img: widget.classStudent.img, size: 0.15),
                 textStyle(
                     text: '${widget.classStudent.className.toUpperCase()} CLASS',
@@ -55,7 +49,14 @@ class _ClassPageState extends State<ClassPage> {
                 const SizedBox(height: ELEMENTMARGIN),
                 classCategoryBox(widget.classStudent.classCategory, context),
                 const SizedBox(height: ELEMENTMARGIN),
-                ListViewStudents(classStudent: widget.classStudent)
+                ListViewStudents(classStudent: widget.classStudent),
+                const SizedBox(height: ELEMENTMARGIN),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    iconButton(icon: BACK, color: Colors.white, page: const HomePage(), context: context),
+                  ],
+                ),
               ],
             ),
           ),

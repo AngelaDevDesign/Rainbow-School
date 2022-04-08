@@ -20,7 +20,7 @@ class StudentBox extends StatelessWidget {
     return InkWell(
       child: Container(
           padding: const EdgeInsets.all(ELEMENTMARGIN),
-          decoration: boxDecoration(color: Colors.white, opacity: 0.3),
+          decoration: boxDecoration(radius: BOXRADIUS/2, color: Colors.white, opacity: 0.3),
           child: Row(
             children: [
               const Icon(Icons.person, color: Colors.black),

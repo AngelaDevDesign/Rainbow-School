@@ -6,7 +6,6 @@ import '../../shared/domains/class_students.dart';
 import '../../shared/utils/global_variables/icons.dart';
 import '../../shared/utils/global_variables/style.dart';
 import '../../shared/utils/global_variables/text.dart';
-import '../../shared/utils/global_variables/theme.dart';
 import '../../shared/widgets/icon_button.dart';
 import '../widgets/student_card.dart';
 
@@ -36,17 +35,6 @@ class _StudentPageState extends State<StudentPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        iconButton(
-                            icon: BACK,
-                            color: Colors.black87,
-                            page:
-                                ClassPage(classStudent: widget.classStudent),
-                            context: context),
-                      ],
-                    ),
                     const Icon(Icons.person,
                         color: Colors.black87, size: 60.0),
                     textStyle(
@@ -55,6 +43,18 @@ class _StudentPageState extends State<StudentPage> {
                         fontColor: Colors.black87,
                         weight: FontWeight.bold),
                     StudentCard(student: widget.student),
+                    const SizedBox(height: ELEMENTMARGIN),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        iconButton(
+                            icon: BACK,
+                            color: Colors.white,
+                            page:
+                            ClassPage(classStudent: widget.classStudent),
+                            context: context),
+                      ],
+                    ),
                   ],
                 ))));
   }

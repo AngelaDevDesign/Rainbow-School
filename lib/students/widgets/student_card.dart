@@ -24,7 +24,7 @@ class _StudentCardState extends State<StudentCard> {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: const BorderRadius.all(Radius.circular(10)),
-        boxShadow: boxShadow(0.3)
+        boxShadow: boxShadow(0.3, 5.0)
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

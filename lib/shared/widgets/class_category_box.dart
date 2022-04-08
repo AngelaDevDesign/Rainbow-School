@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:lista_clase_colegio/shared/widgets/style/text.dart';
-
 import '../utils/global_variables/icons.dart';
 import '../utils/global_variables/style.dart';
 import '../utils/global_variables/text.dart';
@@ -12,7 +11,7 @@ Container classCategoryBox(String? classCategory, BuildContext context) {
     child: classCategory != null
         ? Center(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 2.0),
+          padding: const EdgeInsets.symmetric(horizontal: ELEMENTMARGIN/2),
           child: textStyle(
               text: classCategory,
               fontSize: PARAGRAPHTEXT,
